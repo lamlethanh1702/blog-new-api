@@ -18,7 +18,7 @@ import Notification from "./Schema/Notification.js";
 import Comment from "./Schema/Comment.js";
 
 const server = express();
-const port = process.env.PORT || 4000;
+let PORT = 3000;
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccountKey)
